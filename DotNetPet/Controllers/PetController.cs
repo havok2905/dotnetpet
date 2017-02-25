@@ -12,8 +12,9 @@ namespace DotNetPet
         public string Get()
         {
             Pet myPet = new Pet("Mr. Goops", "mrgoops.png");
-            string json = myPet.ToJson(); 
+            string json = myPet.ToJson();
             return json;
         }
+
     }
 }
