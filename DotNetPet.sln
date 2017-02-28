@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPet", "DotNetPet\DotNetPet.csproj", "{98CD9FA4-D1EC-4CE2-925C-F1AA43230C2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPet.Tests", "DotNetPet.Tests\DotNetPet.Tests.csproj", "{F67DFFC6-AC0E-4CBA-BEE1-C08D5EA5C243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{98CD9FA4-D1EC-4CE2-925C-F1AA43230C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98CD9FA4-D1EC-4CE2-925C-F1AA43230C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98CD9FA4-D1EC-4CE2-925C-F1AA43230C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F67DFFC6-AC0E-4CBA-BEE1-C08D5EA5C243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67DFFC6-AC0E-4CBA-BEE1-C08D5EA5C243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67DFFC6-AC0E-4CBA-BEE1-C08D5EA5C243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67DFFC6-AC0E-4CBA-BEE1-C08D5EA5C243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

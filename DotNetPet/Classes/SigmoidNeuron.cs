@@ -15,16 +15,16 @@ namespace DotNetPet
         }
 
         // Calculate the output of this neuron firing
-        double SigmoidalFunction()
+        public double SigmoidalFunction()
         {
             double summation = 0.0;
 
             for (int x=0; x<inputs.Length; x++)
             {
-              summation = ( this.inputs[x].weight * this.inputs[x].value ) - this.bias;
+                summation += ( this.inputs[x].weight * this.inputs[x].value );
             }
 
-            return 1 + Math.Exp(-summation);
+            return 1 / ( 1 + Math.Exp( (-summation) - this.bias) );
         }
     }
 }
