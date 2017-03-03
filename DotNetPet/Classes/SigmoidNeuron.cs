@@ -4,24 +4,33 @@ namespace DotNetPet
 {
     public class SigmoidNeuron
     {
-
-        public NeuronInput[] inputs;
+        private double[] inputs;
+        private double[] weights;
         public double bias;
 
-        public SigmoidNeuron(NeuronInput[] inputs, double bias)
+        public SigmoidNeuron(double bias)
         {
             this.bias = bias;
-            this.inputs = inputs;
         }
 
-        // Calculate the output of this neuron firing
+        public void SetInputsAndWeights(double[] inputs, double[] weights)
+        {
+            if(inputs.Length != weights.Length)
+            {
+                throw new System.ArgumentException("Arguments inputs and weights must be of equal length", "inputs, weights");
+            }
+
+            this.inputs = inputs;
+            this.weights = weights;
+        }
+
         public double SigmoidalFunction()
         {
             double summation = 0.0;
 
             for (int x=0; x<inputs.Length; x++)
             {
-                summation += ( this.inputs[x].weight * this.inputs[x].value );
+                summation += ( this.weights[x] * this.inputs[x] );
             }
 
             return 1 / ( 1 + Math.Exp( (-summation) - this.bias) );
